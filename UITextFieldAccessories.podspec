@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = '${POD_NAME}'
+  s.name             = 'UITextFieldAccessories'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ${POD_NAME}.'
+  s.summary          = 'Adds useful buttons to a UITextField toolbar.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This pod adds useful button to a UITextField's toolbar. The buttons include Done, Clear, and an optional +/- button that toggles the sign of any number (especially useful with number pad keyboards which don't have a way to input sign).
                        DESC
 
-  s.homepage         = 'https://github.com/${USER_NAME}/${POD_NAME}'
+  s.homepage         = 'https://github.com/michael-s-wu/UITextFieldAccessories'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '${USER_NAME}' => '${USER_EMAIL}' }
-  s.source           = { :git => 'https://github.com/${USER_NAME}/${POD_NAME}.git', :tag => s.version.to_s }
+  s.author           = { 'michael-s-wu' => 'michael_s_wu@yahoo.com' }
+  s.source           = { :git => 'https://github.com/michael-s-wu/UITextFieldAccessories.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version = '5.0'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
-  s.source_files = '${POD_NAME}/Classes/**/*'
+  s.source_files = 'UITextFieldAccessories/Classes/**/*'
   
   # s.resource_bundles = {
   #   '${POD_NAME}' => ['${POD_NAME}/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
