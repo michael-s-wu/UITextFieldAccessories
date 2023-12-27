@@ -29,7 +29,7 @@ This pod adds useful button to a UITextField's toolbar. The buttons include Done
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.swift_version = '5.0'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'UITextFieldAccessories/Classes/**/*'
   
