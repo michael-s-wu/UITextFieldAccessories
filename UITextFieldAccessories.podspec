@@ -27,7 +27,7 @@ This pod adds useful button to a UITextField's toolbar. The buttons include Done
   s.author           = { 'michael-s-wu' => 'michael_s_wu@yahoo.com' }
   s.source           = { :git => 'https://github.com/michael-s-wu/UITextFieldAccessories.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.swift_version = '5.0'
+  # s.swift_version = '5.0'
 
   s.ios.deployment_target = '9.0'
 
